@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Form</title>
+</head>
+<body>
+    <h2>Loan Application Form</h2>
+    <form >
+        <table  cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="amount">Loan Amount:</label></td>
+                <td><input type="number" id="amount" name="amount" required></td>
+            </tr>
+            <tr>
+                <td><label for="income">Monthly Income:</label></td>
+                <td><input type="number" id="income" name="income" required></td>
+            </tr>
+            <tr>
+                <td><label for="reason">Reason for Loan:</label></td>
+                <td><textarea id="reason" name="reason" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Apply">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

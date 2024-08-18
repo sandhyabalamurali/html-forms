@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Registration Form</title>
+</head>
+<body>
+    <h2>Sports Registration Form</h2>
+    <form >
+        <table border="1" cellpadding="10" cellspacing="0">
+            <!-- Personal Information -->
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <!-- Sports Information -->
+            <tr>
+                <td><label for="sport">Select Sport:</label></td>
+                <td>
+                    <select id="sport" name="sport" required>
+                        <option value="soccer">Soccer</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="volleyball">Volleyball</option>
+                        <option value="cricket">Cricket</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="experience">Level of Experience:</label></td>
+                <td>
+                    <select id="experience" name="experience" required>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="position">Preferred Position/Role:</label></td>
+                <td><input type="text" id="position" name="position"></td>
+            </tr>
+            <tr>
+                <td><label for="availability">Availability:</label></td>
+                <td>
+                    <input type="checkbox" id="weekdays" name="availability[]" value="weekdays"> <label for="weekdays">Weekdays</label>
+                    <input type="checkbox" id="weekends" name="availability[]" value="weekends"> <label for="weekends">Weekends</label>
+                    <input type="checkbox" id="evenings" name="availability[]" value="evenings"> <label for="evenings">Evenings</label>
+                </td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

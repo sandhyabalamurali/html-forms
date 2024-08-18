@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Plant Training Registration Form</title>
+</head>
+<body>
+    <h2>In-Plant Training Registration Form</h2>
+    <form action="submit_inplant_registration.php" method="post">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <!-- Personal Information -->
+            <tr>
+                <td><label for="student_name">Student Name:</label></td>
+                <td><input type="text" id="student_name" name="student_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="roll_number">Roll Number:</label></td>
+                <td><input type="text" id="roll_number" name="roll_number" required></td>
+            </tr>
+            <tr>
+                <td><label for="department">Department:</label></td>
+                <td><input type="text" id="department" name="department" required></td>
+            </tr>
+            <tr>
+                <td><label for="college_name">College Name:</label></td>
+                <td><input type="text" id="college_name" name="college_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="year_of_study">Year of Study:</label></td>
+                <td>
+                    <select id="year_of_study" name="year_of_study" required>
+                        <option value="1st_year">1st Year</option>
+                        <option value="2nd_year">2nd Year</option>
+                        <option value="3rd_year">3rd Year</option>
+                        <option value="4th_year">4th Year</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Training Details -->
+            <tr>
+                <td><label for="training_company">Preferred Company for Training:</label></td>
+                <td><input type="text" id="training_company" name="training_company" required></td>
+            </tr>
+            <tr>
+                <td><label for="training_duration">Preferred Duration:</label></td>
+                <td>
+                    <select id="training_duration" name="training_duration" required>
+                        <option value="1_week">1 Week</option>
+                        <option value="2_weeks">2 Weeks</option>
+                        <option value="3_weeks">3 Weeks</option>
+                        <option value="4_weeks">4 Weeks</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="start_date">Preferred Start Date:</label></td>
+                <td><input type="date" id="start_date" name="start_date" required></td>
+            </tr>
+
+            <!-- Contact Information -->
+            <tr>
+                <td><label for="student_contact">Contact Number:</label></td>
+                <td><input type="tel" id="student_contact" name="student_contact" required></td>
+            </tr>
+            <tr>
+                <td><label for="student_email">Email:</label></td>
+                <td><input type="email" id="student_email" name="student_email" required></td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register for In-Plant Training">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

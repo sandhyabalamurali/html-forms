@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divorce Application Form</title>
+</head>
+<body>
+    <h2>Divorce Application Form</h2>
+    <form  method="post">
+        <table  cellpadding="10" cellspacing="0">
+            <tr>
+                <th colspan="2">Applicant's Information</th>
+            </tr>
+            <tr>
+                <td><label for="applicant_name">Full Name:</label></td>
+                <td><input type="text" id="applicant_name" name="applicant_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="applicant_dob">Date of Birth:</label></td>
+                <td><input type="date" id="applicant_dob" name="applicant_dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="applicant_address">Address:</label></td>
+                <td><textarea id="applicant_address" name="applicant_address" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="applicant_phone">Phone Number:</label></td>
+                <td><input type="tel" id="applicant_phone" name="applicant_phone" required></td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Spouse's Information</th>
+            </tr>
+            <tr>
+                <td><label for="spouse_name">Full Name:</label></td>
+                <td><input type="text" id="spouse_name" name="spouse_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="spouse_dob">Date of Birth:</label></td>
+                <td><input type="date" id="spouse_dob" name="spouse_dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="spouse_address">Address:</label></td>
+                <td><textarea id="spouse_address" name="spouse_address" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="spouse_phone">Phone Number:</label></td>
+                <td><input type="tel" id="spouse_phone" name="spouse_phone" required></td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Marriage Details</th>
+            </tr>
+            <tr>
+                <td><label for="marriage_date">Marriage Date:</label></td>
+                <td><input type="date" id="marriage_date" name="marriage_date" required></td>
+            </tr>
+            <tr>
+                <td><label for="marriage_place">Place of Marriage:</label></td>
+                <td><input type="text" id="marriage_place" name="marriage_place" required></td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Divorce Details</th>
+            </tr>
+            <tr>
+                <td><label for="divorce_reason">Reason for Divorce:</label></td>
+                <td><textarea id="divorce_reason" name="divorce_reason" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="children">Do you have children?</label></td>
+                <td>
+                    <input type="radio" id="children_yes" name="children" value="yes" required> <label for="children_yes">Yes</label>
+                    <input type="radio" id="children_no" name="children" value="no"> <label for="children_no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="children_details">If yes, provide details:</label></td>
+                <td><textarea id="children_details" name="children_details" rows="4"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

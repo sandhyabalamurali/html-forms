@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Feedback Form</title>
+</head>
+<body>
+    <h2>Community Feedback Form</h2>
+    <form action="submit_community_feedback.php" method="post">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <!-- Personal Information -->
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact Information:</label></td>
+                <td><input type="tel" id="contact" name="contact" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <!-- Community Involvement -->
+            <tr>
+                <td><label for="involvement">Are you currently involved in community activities?</label></td>
+                <td>
+                    <input type="radio" id="involvement_yes" name="involvement" value="yes" required> 
+                    <label for="involvement_yes">Yes</label>
+                    <input type="radio" id="involvement_no" name="involvement" value="no"> 
+                    <label for="involvement_no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="activities">If yes, please specify the activities:</label></td>
+                <td><textarea id="activities" name="activities" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="suggestions">Suggestions for Community Improvement:</label></td>
+                <td><textarea id="suggestions" name="suggestions" rows="4" required></textarea></td>
+            </tr>
+
+            <!-- Volunteer Interest -->
+            <tr>
+                <td><label for="volunteer">Would you like to volunteer for community events?</label></td>
+                <td>
+                    <input type="radio" id="volunteer_yes" name="volunteer" value="yes" required> 
+                    <label for="volunteer_yes">Yes</label>
+                    <input type="radio" id="volunteer_no" name="volunteer" value="no"> 
+                    <label for="volunteer_no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="volunteer_skills">If yes, what skills can you offer?</label></td>
+                <td><textarea id="volunteer_skills" name="volunteer_skills" rows="4"></textarea></td>
+            </tr>
+
+            <!-- General Feedback -->
+            <tr>
+                <td><label for="feedback">Additional Feedback or Comments:</label></td>
+                <td><textarea id="feedback" name="feedback" rows="4"></textarea></td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit Feedback">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

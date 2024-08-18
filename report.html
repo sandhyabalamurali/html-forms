@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violation Report Form</title>
+</head>
+<body>
+    <h2>Violation Report Form</h2>
+    <form >
+        <table border="1" cellpadding="10" cellspacing="0">
+            <!-- Personal Information -->
+            <tr>
+                <td><label for="reporter_name">Your Name:</label></td>
+                <td><input type="text" id="reporter_name" name="reporter_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="reporter_contact">Contact Information:</label></td>
+                <td><input type="tel" id="reporter_contact" name="reporter_contact" required></td>
+            </tr>
+            <tr>
+                <td><label for="reporter_email">Email:</label></td>
+                <td><input type="email" id="reporter_email" name="reporter_email" required></td>
+            </tr>
+
+            <!-- Violation Details -->
+            <tr>
+                <td><label for="violation_type">Type of Violation:</label></td>
+                <td>
+                    <select id="violation_type" name="violation_type" required>
+                        <option value="safety">Safety Violation</option>
+                        <option value="security">Security Violation</option>
+                        <option value="environmental">Environmental Violation</option>
+                        <option value="ethical">Ethical Violation</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="violation_date">Date of Violation:</label></td>
+                <td><input type="date" id="violation_date" name="violation_date" required></td>
+            </tr>
+            <tr>
+                <td><label for="violation_location">Location of Violation:</label></td>
+                <td><input type="text" id="violation_location" name="violation_location" required></td>
+            </tr>
+            <tr>
+                <td><label for="violation_description">Description of Violation:</label></td>
+                <td><textarea id="violation_description" name="violation_description" rows="4" required></textarea></td>
+            </tr>
+
+            <!-- Witness Information -->
+            <tr>
+                <td><label for="witness_name">Witness Name (if any):</label></td>
+                <td><input type="text" id="witness_name" name="witness_name"></td>
+            </tr>
+            <tr>
+                <td><label for="witness_contact">Witness Contact Information:</label></td>
+                <td><input type="tel" id="witness_contact" name="witness_contact"></td>
+            </tr>
+
+            <!-- Evidence Upload -->
+            <tr>
+                <td><label for="evidence">Upload Evidence (if any):</label></td>
+                <td><input type="file" id="evidence" name="evidence"></td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit Report">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

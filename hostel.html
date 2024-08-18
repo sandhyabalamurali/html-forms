@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Registration Form</title>
+</head>
+<body>
+
+    <h2>Hostel Registration Form</h2>
+    <form>
+        <table cellpadding="10">
+            <tr>
+                <td><label for="studentName">Student Name:</label></td>
+                <td><input type="text" id="studentName" name="studentName" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <br>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="course">Course:</label></td>
+                <td><input type="text" id="course" name="course" required></td>
+            </tr>
+            <tr>
+                <td><label for="year">Year:</label></td>
+                <td>
+                    <select id="year" name="year" required>
+                        <option value="1st">1st Year</option>
+                        <option value="2nd">2nd Year</option>
+                        <option value="3rd">3rd Year</option>
+                        <option value="4th">4th Year</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="roomPreference">Room Preference:</label></td>
+                <td>
+                    <input type="radio" id="singleRoom" name="roomPreference" value="single" required>
+                    <label for="singleRoom">Single Room</label>
+                    <br>
+                    <input type="radio" id="sharedRoom" name="roomPreference" value="shared" required>
+                    <label for="sharedRoom">Shared Room</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="guardianName">Guardian Name:</label></td>
+                <td><input type="text" id="guardianName" name="guardianName" required></td>
+            </tr>
+            <tr>
+                <td><label for="guardianContact">Guardian Contact Number:</label></td>
+                <td><input type="tel" id="guardianContact" name="guardianContact" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="declaration" name="declaration" required>
+                    <label for="declaration">I hereby declare that the above information is true and correct to the best of my knowledge.</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
